@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)http://www-ens.iro.umontreal.ca/~lafontle/ift2255/template.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFT2255 | Rapport DM3</title>
+    <link rel="shortcut icon" href="http://www-ens.iro.umontreal.ca/~lafontle/ift2255/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <style>
+        .report-header {
+            padding-top: 24px; padding-bottom: 24px;
+            background-color: #fff;
+        }
+
+        .title-section {
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+
+        .report-title {
+            color: royalblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .report-summary {
+            max-width: 800px;
+            font-size: 1.4em;
+            color: #555;
+        }
+        
+        .section-title {
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            font-size: 2.4em; font-weight: 300;
+        }
+
+        .team-section {
+            padding-left: 5vw;
+            padding-right: 5vw;
+        }
+
+            .team-title {
+                font-weight: 500;
+                margin-bottom: 12px;
+                color: #1C3A94;
+            }
+
+            .members {
+                display: flex; flex-direction: row;
+            }
+
+            .member {
+                display: flex; flex-direction: column;
+            }
+                .member:not(:last-child) {
+                    margin-right: 12px;
+                }
+
+                .member-pic {
+                    display: block;
+                    width: 120px;
+                    height: 130px;
+                    border-radius: 50%;
+                }
+
+                .member-role {
+                    font-size: 0.9em; font-weight: 500;
+                    color: #555;
+                }
+
+        .report-body {
+            display: flex;
+        }
+
+        .report-aside {
+            padding-top: 24px;
+            padding-right: 12px;
+            padding-left: 5vw;
+            box-shadow: 1px 0 1px #999;
+        }
+
+        .report-main {
+            padding-left: 12px;
+            padding-right: 5vw;
+            padding-top: 24px;
+        }
+
+        .nav {
+            color: #E87429;
+        }
+
+        .nav-item__link {
+            display: block;
+            padding: 6px;
+            text-decoration: none;
+        }
+
+        .glossary {
+            font-size: 1.4em;
+        }
+
+        .glossary-term {
+            font-weight: bold;
+        }
+
+        .preview-img {
+            width: 900px;
+            height: 600px;
+            border: black 2px solid;
+        }
+        /*Pour l'échéancier*/
+        .preview-img2 {
+            width: 1000px;
+            height: 400px;
+            border: black 2px solid;
+        }
+
+        .preview-img-long {
+            width: 943.5px;
+            height: 332px;
+            border: black 2px solid;
+        }
+
+        .preview-img3 {
+            width: 726px;
+            height: 797,25px;
+            border: black 2px solid;
+        }
+
+        .report-footer {
+            background-color: #2C5EB4;
+            padding: 12px 5vw 24px;
+        }
+
+        .report-footer p {
+            margin: 0;
+        }
+
+        .report-footer__link {
+            color: #fff;
+        }
+
+        .hr1 {
+         border: 0;
+        height: 2px;
+        background-image: linear-gradient(to right, transparent, #CCC, transparent);  
+        }
+    </style>
+</head>
+
+<body>
+    <header class="report-header">
+        <div class="title-section">
+            <h1 class="report-title">Rapport du livrable 3</h1>
+            <p class="report-summary">
+                Ce livrable se concentre principalement sur la phase de création et le début de la phase d'élaboration du projet. 
+                On commence par la cueillette des exigences en discutant avec le client.
+                On présente une version initiale du modèle du domaine et des exigences. Ensuite, on présente les risques impliqués dans le projet
+                et le plan pour la phase d'élaboration.
+            </p>
+        </div>
+
+        <div class="team-section">
+            <h2 class="team-title">Notre équipe</h2>
+            <ul class="bare-list members">
+                <li class="member">
+                    <img class="member-pic" src="./images/Hani_profile.png" alt="">
+                    <div class="member-identification">
+                        <span class="member-name">Hani Berchan</span>
+                        <span class="member-id">20174173</span>
+                    </div> 
+                    <a href="mailto:prenom.nom@umontreal.ca">hani.berchan@umontreal.ca</a>
+    
+                </li>
+                <li class="member">
+                    <img class="member-pic" src="./images/benjamin.png" alt="">
+                    <div class="member-identification">
+                        <span class="member-name">Benjamin Roy</span>
+                        <span class="member-id">20172976</span>
+                    </div> 
+                    <a href="mailto:prenom.nom@umontreal.ca">benjamin.roy.6@umontreal.ca</a>
+        
+                </li>
+                <li class="member">
+                    <img class="member-pic" src="./images/Paul.jpg" alt="">
+                    <div class="member-identification">
+                        <span class="member-name">Paul-Ulrich Nguimeya Demefack</span>
+                        <span class="member-id">20147236</span>
+                    </div> 
+                    <a href="mailto:prenom.nom@umontreal.ca">Paul-Ulrich.Nguimeya.Demefack@umontreal.ca</a>
+                    
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="report-body">
+        <aside class="report-aside">
+            <nav>
+                <ul class="bare-list nav">
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#plan">Plannification</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#domain">Compréhension du domaine</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#model">Modélisation du domaine</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#analysis">Analyse des besoins</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#prototype">Prototype</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#analyse">Analyse</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#activity">Diagrammes d'activités</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#class">Diagramme de classe</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#sequence">Diagramme de séquence</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item__link" href="#test">Test unitaire</a> 
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="report-main">
+            <section>
+                <h2 id="plan" class="section-title">Plannification</h2>
+                <p><b>Description brève du domaine et du problème</b></p>
+                <p>
+                    Le but de ce projet est de créer un système d'information VaxTodo:re qui sera utilisé uniquement par les employés. 
+                    L'objectif de ce projet est de permettre à Goodpeople de mieux gérer les rendez-vous et faciliter le suivi sur 
+                    toute question reliée à la preuve de vaccination et prise de rendez-vous pour la deuxième dose.
+                </p>
+                <p><b>Présentation de l'échéancier et la distribution des tâches</b></p>
+                <div class="preview">
+                    <img class="preview-img2" src="./images/écheancier.PNG" alt="">
+                    <br><br><br>
+                </div>
+                <div class="preview">
+                    <img class="preview-img2" src="./images/tâches.PNG" alt="">
+                    <br><br><br>
+                </div>
+                <p><b>Réponses du client à nos questions </b> <br>
+                <ul>
+                <li><u>Processus:</u> Le processus commence par la vérification du rendez-vous par le bénévole. Si le client à un rendez-vous, 
+                    alors la personne se dirige dans la file d’attente avec rendez-vous, sinon le client se dirige vers la file sans rendez-vous. 
+                    La file d'attente est gérée en premier arrivé, premier servi, en priorisant les visites planifiées. Par la suite, la personne 
+                    se dirige vers un employé pour confirmer son rendez-vous, confirmer le but de la visite et pour récupérer les informations 
+                    nécessaires et remplit un questionnaire. En cas de première dose, on demande au client s’il veut faire la première dose pour
+                    en prendre un rendez-vous en lui choisissant une date d’un délai de minimum un mois. Enfin, l’employé donne un billet au visiteur 
+                    et attend son tour pour voir un professionnel pour se faire vacciner.
+                </li> 
+                <li>
+                    <u>Participants:</u> Les participants impliqués dans le processus de vaccination sont une équipe composée d’employés et de bénévoles. 
+                </li>
+                <li>
+                    <u>Nombre d’employés et plage horaire:</u> Le local se limite à 40 personnes, ne comptant pas l’équipe et les professionnels de 
+                    la santé. La prise de rendez-vous peut être effectuée pour un maximum de 2 personnes et une plage horaire est limitée à 15 rendez-vous 
+                </li>
+                <li>
+                    <u>Manipulation du système:</u> Le système d'information VaxTodo:re sera manipulé uniquement par les employés. L'employé peut accéder 
+                    à la liste des rendez-vous, la liste des bénévoles et des comptes visiteurs pour en ajouter, modifier ou supprimer.
+                </li> 
+                <li>
+                    <u>Détails compte visiteur:</u> Le compte du visiteur aura un numéro unique à douze chiffres et sera rattaché à une adresse courriel unique. 
+                    Il présentera aussi les informations personnelles du visiteur: nom, prénom, date de naissance, adresse et numéro de téléphone. 
+                </li>
+                <li>
+                    <u>Création de comptes:</u> Le client ne peut pas créer un compte chez lui donc afin d'éviter d'avoir des comptes fantômes, le client doit se 
+                    rendre sur place pour créer un compte.
+                </li>
+                <li>
+                    <u>Prise de rendez-vous à l’avance:</u> Le client peut prendre un rendez-vous au minimum 72 heures à l'avance.
+                </li> 
+                <li>
+                    <u>Se présenter sans rendez-vous:</u> Le bénévole vérifie la quantité de rendez-vous prévus dans un délai d'une heure et l'ajoute au 
+                    nombre de visiteurs présents. Si la somme est inférieure à la capacité du local, son nom est ajouté à la plage horaire correspondant à 
+                    l'heure de la visite. Sinon, son nom est ajouté à la prochaine plage horaire disponible.
+                </li>
+                </ul>
+                </p>
+
+
+                <p><b>Présentation des hypothèses</b> <br>
+                </br>
+                Après avoir fait les échanges avec GoodPeople, nous avons pu émettre des hypothèses que nous avons
+                suivi pour rédiger le reste du rapport.
+                <br>
+                On a supposé que:
+                <br>
+                <ul>
+                <li>
+                    Si on ne trouve pas le compte client lorsqu’on fait la recherche à l’aide de son nom et son numéro de compte, 
+                    alors le compte n’existe pas.
+                </li>
+                <li>
+                    C’est le client qui décide de supprimer son compte et non l’employé.
+                </li>
+                <li>
+                    L’agent se déconnecte à la fin de la journée, donc on n’ajoutera pas la déconnexion du système dans nos scénarios.
+                </li>    
+                </ul>     
+
+                </p>
+
+            </section>
+
+            <section>
+                <h2 id="domain" class="section-title">Compréhension du domaine</h2>
+                <p>
+                    Après de nombreuses rencontres et une familiarisation avec l'activité VaxTodo, nous avons préparé un glossaire 
+                    rassemblant les termes et expressions clés caractérisant l'environnement.
+                </p>
+                <!-- GLOSSAIRE -->
+
+                <h3>Glossaire</h3>
+                <table class="glossary">
+                    <tr>
+                    <td class="glossary-term">Serveur:</td>
+                    <td>Base de données qui contient toutes les données sur les profils des membres et les réservations.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">L'agent:</td>
+                    <td>Il interagit avec la base de données pour la gestion des clients et des rendez-vous (employé et bénévole).</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Compte bénévole:</td>
+                    <td>Compte dans lequel sont entrées les informations minimales (Noms, adresse mail, domicile, numéro de téléphone) concernant un bénévole dans le but de l’identifier.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Client: </td>
+                    <td>Un patient qui désire se faire vacciner.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Informations personnelles: </td>
+                    <td>Nom, prénom, email et/ou numéro de téléphone et/ou date de naissance du client.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Numéro de compte: </td>
+                    <td>Numéro unique à douze chiffres liés au compte du client.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Rendez-vous: </td>
+                    <td>Moment où le client a pris une réservation pour se faire vacciner.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Système : </td>
+                    <td>L'application VaxTodo qui communique avec la base de données.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Plage horaire: </td>
+                    <td>Période de temps limite à l'intérieur de laquelle un client subit son processus de vaccination (débute lorsque le client se présente à la réception et se termine après avoir fait son vaccin.)</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Bénévole: </td>
+                    <td>Personne qui s'est portée volontaire pour aider GoodPeople à accueillir les clients.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Professionnel: </td>
+                    <td>Membre d'un service de santé autorisé à administrer ou superviser la séance de vaccination.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Employé: </td>
+                    <td>Membre du personnel GoodPeople (avec un numéro de compte pour se connecter au logiciel).</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Local/réception : </td>
+                    <td>Emplacement réservé par GoodPeople pour le processus de vaccination.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Calendrier des rendez-vous: </td>
+                    <td>Emploi de temps disponible sur lequel sont affichées les différentes plages horaires de vaccinations.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Visite spontanée:</td>
+                    <td>Visite pour cadre de vaccination faite sur place par un client n'ayant pas pris de rendez-vous ou perdu son rendez-vous.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Règles sanitaires: </td>
+                    <td>Mesures à respecter pour éviter ou réduire la propagation du virus.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Dose: </td>
+                    <td>Vaccin administré au client (1ere et 2e dose existante pour chaque rendez-vous) après un intervalle de temps entre les deux.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Preuve de Vaccination : </td>
+                    <td>Document PDF/word présentant son nom, sa date de naissance, un code QR et la liste des vaccins administrés.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Profil de vaccination: </td>
+                    <td>Page résumée des rendez-vous, du nombre de doses et le type de vaccin qu'un client a déjà reçu.</td>
+                    </tr>
+                    <tr>
+                    <td class="glossary-term">Éligible:</td>
+                    <td>Toute personne répondant aux critères qui sont d'être âgée d'au moins 18 ans, pas encore "totalement" vaccinée, ayant une carte d'assurance maladie en sa possession ou un numéro d'identification valide.</td>
+                    </tr>
+                    <tr>
+                        <td class="glossary-term">Code d'identification:</td>
+                        <td>Identifiant à 9 chiffre permettant à un agent de se connecter au système.</td>
+                    </tr>
+                    <tr>
+                        <td class="glossary-term">Mot de passe:</td>
+                        <td>Mot de passe composé d'au moins 8 caractères contenant au moins 1 chiffre, 1 majuscule, 1 minuscule et 1 caractère spécial permettant à un agent de se connecter au système.</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section>
+                <h2 id="model" class="section-title">Modélisation du domaine</h2>
+                <p><b>Cas d'utilisation</b></p>
+                <a href="./vpp/TP1.vpp">
+                    <img class="preview-img3" src="./images/Use_Case_Diagram.jpg" alt="">
+                </a>
+
+                <h3>Scénarios</h3>
+                    
+
+                <div>
+                <p>
+                    <b>CU: Prise de rendez-vous</b><br><br>
+
+                    <b>But:</b> Prendre un rendez vous pour faire le vaccin<br>
+                
+                    <b>Acteurs:</b> Client (principal), Agent (secondaire)<br>
+                </p>
+                <p>
+                    <b>Scénario principal:</b>
+                    <ol>
+                        <li>Le client appelle un agent pour prendre un rendez-vous.</li>
+                         <li>L’agent demande la raison de l'appel.</li>
+                         <li>Le client explique qu’il veut prendre un rendez-vous.
+                         <ol>
+                            <li>Le client fournit sa préférence de date et horaire.
+                        </ol></li>
+                        <li>L’agent accède à la page du calendrier des rendez-vous.</li>
+                        <li>L’agent vérifie les plages horaires disponibles.
+                        <ol>
+                            <li>Le Système confirme la disponibilité choisie.</li>
+                        </ol></li>     
+                        <li>L’agent demande les informations personnelles du client.</li>
+                        <li>Le client fournit les informations à l’agent.</li>
+                        <li>L’agent vérifie les informations du client.</li>
+                        <li>L’agent ajoute le rendez-vous dans le système.</li>
+                        <li>Le système confirme le rendez-vous.</li>
+                        <li>L’agent communique le numéro de réservation au client.</li>
+                        <li>Le système envoie ses informations par courriel au client.</li>
+                        <li>L’appel se termine.</li>       
+                    </ol>
+                </p>
+                <p>
+                    <b>Scénario alternatif:</b><br>          
+                    &emsp;&emsp;5.a. La date n’est pas disponible,<br>
+                    &emsp;&emsp;&emsp;5.a.1 L’agent indique au client que la date n’est pas disponible.<br>
+                    &emsp;&emsp;&emsp;5.a.2 Le client fournit une nouvelle date et horaire.<br>
+                    &emsp;&emsp;&emsp;5.a.3 Retour à l’étape 5.<br>
+
+                </p>
+                </div>
+
+                <hr class="hr1"></hr>
+
+                <div>
+                    <p><b>CU: Annulation de Rendez-Vous.</b> <br>
+                    </br>
+                    <b>But:</b> Supprimer un rendez-vous relié à un client pour le retirer du calendrier.<br>
+                    <b>Acteurs:</b> Client (principal), L’employé (secondaire). <br>
+                    <b>Précondition: </b>  - Le client doit déjà avoir une réservation enregistrée dans son compte, un employé 
+                        est disponible pour répondre à l’appel et l’employé est déjà connecté.
+                   <br>
+
+                  </p> 
+                    <p><b>Scénario principal:</b></p>
+                    <ol>
+                      <li> Le client appelle un employé pour annuler un rendez-vous.</li>
+                      <li> L’employé demande la raison de l'appel.</li>
+                      <li> Le client explique qu’il veut annuler un rendez-vous.</li>
+                      <li> L’employé accède au calendrier des rendez-vous.</li>
+                      <li> L’employé demande le numero de son rendez-vous.</li>
+                      <li> Le client communique les informations à l’employé.</li>
+                      <li> L’employé trouve le rendez-vous du client dans le calendrier.</li>
+                      <li> L’employé supprime le rendez-vous du client.</li>
+                      <li> Le système confirme la suppression du rendez-vous.</li>
+                      <li> L’employé indique au client que son rendez-vous a été annulé.</li>
+                      <li> L’appel se termine.</li>
+                        
+       
+                    </ol>  
+                </div>
+
+                <hr class="hr1"></hr>
+
+                    <!-- CAS D'UTILISATION POUR LES CLIENTS-->
+
+                    <!-- Créer un Compte client -->
+                    
+                <div>
+                   <p><b>CU: Créer un compte client.</b> <br>
+                   </br>
+                   <b>But:</b>  Avoir un compte dans le système.<br>
+                   <b>Acteurs:</b> Client (Principal), L'employé (Secondaire) <br>
+                   <b>Précondition:</b> L'employé est déjà connecté.<br>
+                 </p> 
+                   <p><b>Scénario principal:</b></p>
+                <ol>
+                    <li>Le client se présente à la réception/accueil.</li>
+                    <li>L'employé accède à la page gestion des comptes clients.</li>
+                    <li>L'employé clique sur "Créer un compte".</li>
+                    <li>L'employé demande les informations personnelles du client.</li>
+                    <li>Le client communique les informations à l’employé.</li>
+                    <li>L'employé rentre les informations requise du client dans le système.</li>
+                    <li>Le système valide les informations.</li>
+                    <li>Le système confirme la création du compte et affiche le numéro de compte unique du client.</li>
+                    <li>Le système envoie un courriel de confirmation contenant le numéro de compte.</li>
+                    <li>L'employé communique le numéro de compte au client.</li>
+                </ol> 
+                <p><b>Scénario alternatif:</b></p>
+                <p>
+                    &emsp;&emsp;5.a. Le client n’est pas éligible à s’inscrire.<br>
+                    &emsp;&emsp;&emsp;5.a.1 Le scénario se termine. <br>
+                    &emsp;&emsp; 7.a Le système rejette certaines informations mal entrées.<br>
+                    &emsp;&emsp;&emsp; 7.a.1 Le système demande à l’employé de rentrée les informations de nouveau.<br>
+                    &emsp;&emsp;&emsp; 7.a.2 Le scénario reprend à l’étape 6.<br>
+                </p>
+                </div>
+
+                <hr class="hr1"></hr>
+                <!--Modification de compte client-->
+                <div>
+                    <p><b>CU: Modification de compte client.</b> <br>
+                    </br>
+                    <b>But:</b> Pouvoir changer les données/informations reliées à un client spécifique.<br>
+                    <b>Acteurs:</b> Client (Principal), L'employé (Secondaire) <br>
+                    <b>Précondition:</b> - Le client doit avoir un compte VaxTodo:re et l’employé est déjà connecté.<br>
+
+                  </p> 
+                    <p><b>Scénario principal:</b></p>
+                    <ol>
+                      <li>L'employé accède à la page recherche des clients.</li>
+                      <li>L'employé recherche le profil du client à l'aide du nom ou du numéro de compte du client dans la barre de recherche.</li>
+                      <li>L'employé trouve le profil du client.</li>
+                      <li>Le client communique les informations à modifier à l’employé.</li>
+                      <li>L'employé apporte les modifications nécessaires aux endroits correspondants. (changement d'adresse, de mail, numéro de téléphone...)</li>
+                      <li>L'employé valide avec le client si les informations sont correctes.</li>
+                      <li>L'employé enregistre et valide les informations entrées.</li>
+                      <li>Le système valide les informations.</li>
+                      <li>Le système confirme la modification des informations.</li>
+                      <li>L'employé ferme le profil du client concerné.</li>
+                    </ol>
+                    <p><b>Scénario alternatif:</b></p>
+                  <p>
+                    &emsp;&emsp;3.a L'employé ne trouve pas le profil du client. <br>
+                    &emsp;&emsp;&emsp;3.a.1 L'employé informe le client qu’il n’a pas de compte . <br>
+                    &emsp;&emsp;&emsp;3.a.2 L'employé informe le client qu’il doit se rendre sur place pour faire son compte. <br>
+                    &emsp;&emsp;&emsp;3.a.3 Le scénario se termine. <br>
+                  </p>  
+                </div>
+                <hr class="hr1"></hr>
+                <!--Supprimer le compte du Client-->
+                <div>
+                    <p><b>CU: Supprimer le compte du client.</b> <br>
+                    </br>
+                    <b>But:</b> Supprimer un compte ainsi que toutes ses informations.<br>
+                    <b>Acteurs:</b> Le client (Principal), L'employé (Secondaire) <br>
+                    <b>Précondition:</b> - Le client doit avoir un compte VaxTodo:re et l’employé est déjà connecté.<br>
+                  </p> 
+                    <p><b>Scénario principal:</b></p>
+                    <ol>
+                        <li>Le client indique à l’employé qu’il désire supprimer son compte.</li>
+                        <li>L'employé accède à la page recherche des clients.</li>
+                        <li>Le client communique son numéro de compte ou son nom à l’employé.</li>
+                        <li>L'employé recherche le profil du client à l'aide du nom ou du numéro de compte du client dans la barre de recherche.</li>
+                        <li>L'employé clique sur le profil du client correspondant.</li>
+                        <li>L'employé vérifie qu'il s'agit du bon client.</li>
+                        <li>L'employé supprime le compte du client.</li>
+                        <li>L'employé confirme la suppression du compte. ("OUI")</li>
+                        <li>Le système confirme la suppression du compte.</li>
+                    </ol>
+                </div>
+
+                <hr class="hr1"></hr>
+            <!-- Se connecter au système-->
+             <div>
+                <p><b>CU: Se connecter</b> <br>
+                </br>
+                <b>But:</b> Se connecter au système. <br>
+                <b>Acteur:</b> L’agent (Principal). <br>    
+            <b>Précondition:</b> Avoir un code d’identification et un mot de passe valide. <br>
+        </p>
+        <p><b>Scénario principal:</b></p>
+        <ol>
+        <li> L’agent ouvre le système.</li>
+        <li> L’agent entre son code d’identification.</li>
+        <li> L’agent entre son mot de passe.</li>
+        <li> L’agent clique sur “Se connecter” pour accéder au système.</li>
+        <li> Le système confirme la connexion.</li>
+        </ol>
+  
+        <p><b>Scénario alternatif:</b></p>  
+        <p>
+            &emsp;&emsp;5.a. La connexion échoue. <br>
+	        &emsp;&emsp;&emsp;5.a.1 Retour à l'étape 2. <br>
+        </p> 
+    </div>
+    <hr class="hr1"></hr>
+    <!-- Accueillir un Client -->
+    <div>
+       <p><b>CU: Accueillir un Client</b> <br>
+        </br>
+        <b>But:</b> Accueillir un client à la réception du local de GoodPeople et mieux l’orienter. <br>
+        <b>Acteurs:</b> Client (Principal), Bénévole (Secondaire).<br>
+        <b>Pré-condition:</b> Le bénévole est déjà connecté. <br>
+    </p>
+    <p><b>Scénario principal:</b></p>
+    <ol>
+    <li>Le client se présente à l’accueil du centre Good People.</li>
+    <li>Le client est reçu par un bénévole.</li>
+    <li>Le bénévole demande le numéro de réservation du client et son nom.</li>
+    <li>Le client communique son numéro de réservation du client et son nom au bénévole.</li>
+    <li>Le bénévole vérifie dans le système si le client a une réservation à la plage horaire désignée.</li>
+    <li>Le système confirme le numéro de réservation (Réservation existante).</li>
+    <li>Le bénévole oriente le client vers la file d’attente des visites planifiées.</li>
+    <li> Le bénévole ferme la plage horaire pour ce client.</li>
+    </ol>        
+    <p><b>Scénario alternatif:</b></p>  
+    <p>
+        &emsp;&emsp;3.a Le client n’a pas de numéro de réservation.<br>
+        &emsp;&emsp; &emsp;3.a.1 Le bénévole vérifie les plages horaires disponibles pour les visites spontanées
+                   dans le système.<br>
+        &emsp;&emsp; &emsp;3.a.2 Le système affiche les plages disponibles.<br>
+        &emsp;&emsp; &emsp;3.a.3 Le bénévole choisit une qui correspond aux exigences du client.<br>
+        &emsp;&emsp; &emsp;3.a.4 Le système confirme le choix.<br>
+        &emsp;&emsp; &emsp;3.a.5 Le bénévole dirige le client vers la file des visites spontanées.<br>
+        &emsp;&emsp; &emsp;3.a.6 Retour à l'étape 8.<br>
+       </p> 
+    </div>
+    <hr class="hr1"></hr>
+
+    <!--CAS D'UTILISATION POUR LE QUESTIONNAIRE-->
+
+    <!--CU Remplir un questionnaire-->
+    <div>
+        <p><b>CU: Remplir un questionnaire.</b> <br>
+        </br>
+        <b>But:</b> Remplir le questionnaire qui permettra de poursuivre le processus de vaccination de façon fluide.<br>
+        <b>Acteurs:</b> Le client (Principal), Employé (Secondaire)<br>
+        <b>Précondition:</b> le client doit avoir sa carte d’assurance maladie valide et en sa possession et l’employé est déjà connecté.<br>
+      </p> 
+        <p><b>Scénario principal:</b></p>
+        <ol>
+            <li>Le client se présente en face de l'employé.</li> 
+             <li>L’employé demande au client son numéro de compte et la carte d’assurance maladie du client.
+               <ol>
+                <li>Le client fournit son numéro de compte.</li>
+                <li>Le client fournit sa carte d’assurance maladie.</li>
+            </ol> 
+            </li> 
+           <li>L’employé vérifie la validité de la carte d’assurance maladie.</li> 
+           <li>L’employé trouve le profil du client. </li> 
+            <li>Le système confirme les informations.</li> 
+            <li>L’employé accède à la page du formulaire.</li> 
+            <li>L’employé commence à poser les questions au client pour remplir le formulaire convenablement.</li> 
+            <li>L’employé termine de remplir le questionnaire avec le client.</li> 
+            <li>L’employé imprime le formulaire (CU “Impression de Formulaire”).</li> 
+            </ol>
+            <p><b>Scénario alternatif:</b></p>  
+        <p>
+        &emsp;&emsp;3.a la carte d’assurance maladie du client n’est pas valide.<br>
+        &emsp;&emsp;&emsp;3.a.1 l’employé annule la visite actuelle du client.<br>
+        &emsp;&emsp;&emsp;3.a.2 l’employé invite le client à prendre un nouveau rendez-vous et renouveler 
+        la carte d’assurance maladie avant de se représenter.<br>
+        &emsp;&emsp;&emsp;3.a.3 l’employé finalise la nouvelle prise de rendez-vous avec le client.<br>
+        &emsp;&emsp;&emsp;3.a.4 l’employé ferme le profil du client.<br>
+        &emsp;&emsp;&emsp;3.a.5 Fin de scénario.<br>
+        </p>
+        </div>
+        <hr class="hr1"></hr>
+<!--Impression du questionnaire-->
+<div>
+    <p><b>  CU: Impression du questionnaire</b><br>
+    </br>
+<b>But:</b> Imprimer le formulaire d’information regardant le client qui sera utilisé par le professionnel de la santé. <br>
+<b>Acteurs:</b> Le client (Principal) , l’employé (Secondaire). <br>
+<b>Précondition:</b>Le formulaire doit avoir été rempli au préalable par l’employé et le client et signé par l’employé.<br>
+</p>
+<p><b>Scénario principal:</b></p>
+<ol>
+    <li> L’employé lance le processus d’impression à travers le système.</li> 
+    <li> Le système confirme l’impression du questionnaire (« OUI » ).</li> 
+    <li> Le système imprime le questionnaire.</li> 
+    <li> L’employé signe le questionnaire.</li> 
+    <li> L’employé donne le questionnaire au client.</li> 
+    <li> L’employé dirige le client vers la file d’attente des professionnels de la santé.</li> 
+ </ol>
+ <p><b>Scénario alternatif (exception):</b></p>  
+ <p>
+    &emsp;&emsp;3.a Le système n’imprime pas le questionnaire (manque de papier / imprimante en panne).<br>
+	&emsp;&emsp;&emsp;3.a.1 Le système indique que le questionnaire n’a pas pu être imprimé.<br>
+	&emsp;&emsp;&emsp;3.a.2 Le scénario se termine.<br>
+</p>
+</div>
+            <!-- CAS D'UTILISATION POUR LES BENEVOLES-->
+
+            <hr class="hr1"></hr>
+            <!-- Créer un compte pour un bénévole-->
+            <div>
+                <p><b>CU: Créer un compte pour un bénévole.</b> <br>
+                </br>
+                <b>But:</b> Avoir un compte pour un bénévole précis sur le système.<br>
+                <b>Acteurs:</b> Bénévole (Principal), employé (Secondaire) <br>
+                <b>Précondition :</b> L’employé est déjà connecté.<br>
+              </p> 
+                <p><b>Scénario principal:</b></p>
+                <ol>
+                    <li>Le bénévole se présente à la réception</li>
+                    <li>L’employé accède à la page gestion de la liste des bénévoles.</li>
+                    <li>L’employé clique sur "Créer un compte".</li>
+                    <li>L’employé demande les informations personnelles du bénévole.</li>
+                    <li>Le bénévole communique ses informations personnelles à l’employé.</li>
+                    <li>L’employé rentre les informations requises du bénévole dans le système.</li>
+                    <li>Le système valide les informations.</li>
+                    <li>Le système confirme la création du compte et affiche le numéro de compte unique du bénévole.</li>
+                    <li>Le système envoie un courriel de confirmation contenant le numéro de compte.</li>
+                    <li>L’employé communique le numéro de compte au bénévole.</li>
+                    
+                    </ol>
+                <p><b>Scénario alternatif:</b></p>
+              <p>
+                &emsp;&emsp;5.a Le bénévole n’est pas éligible à s’inscrire. <br>
+                &emsp;&emsp;&emsp;5.a.1 Le scénario se termine. <br>
+
+                &emsp;&emsp;7.a Le système rejette certaines informations mal entrées. <br>
+                &emsp;&emsp;&emsp;7.a.1 Le système demande à l’agent de rentrée les informations de nouveau. <br>
+                &emsp;&emsp;&emsp;7.a.2 Le scénario reprend à l’étape 5. <br>
+              </p>  
+            </div>
+            <hr class="hr1"></hr>
+            <!-- Modifier le compte d'un bénévole -->
+            <div>
+                <p><b>CU: Modification de compte bénévole</b> <br>
+                </br>
+                <b>But:</b>  Pouvoir changer les données/informations reliées à un bénévole.<br>
+                <b>Acteurs:</b> bénévole (Principal), employé (Secondaire) <br>
+                <b>Précondition:</b> : - le bénévole doit avoir ses informations dans son compte bénévole .<br>
+
+              </p> 
+                <p><b>Scénario principal:</b></p>
+                <ol>
+                  <li>L’employé accède à la page recherche des bénévoles.</li>
+                  <li>L’employé recherche le profil du bénévole à l'aide du nom ou du numéro de compte bénévole dans la barre de recherche.</li>
+                  <li>L’employé trouve le profil du bénévole.</li>
+                  <li>Le bénévole communique les informations à modifier à l’employé.</li>
+                  <li>L’employé apporte les modifications nécessaires aux endroits correspondants (changement d’adresse, de mail, numéro de téléphone…).</li>
+                  <li>L’employé valide avec le bénévole si les informations sont correctes.</li>
+                 <li>L’employé enregistre et valide les informations entrées</li>
+                <li>Le système confirme la modification des informations.</li>
+                <li>L’employé ferme le profil du bénévole concerné</li>
+                    
+                </ol>
+                <p><b>Scénario alternatif:</b></p>
+              <p>
+                &emsp;&emsp;3.a L’agent ne trouve pas le profil du bénévole. <br>
+                &emsp;&emsp;&emsp;3.a.1 L’agent informe le bénévole qu’il n’a pas de compte . <br>
+                &emsp;&emsp;&emsp;3.a.2 L’agent crée un nouveau compte au bénévole. <br>
+                &emsp;&emsp;&emsp;3.a.3 Le scénario se termine. <br>
+              </p>  
+            </div>
+            <hr class="hr1"></hr>
+            <!-- Supprimer le compte d'un Bénévole -->
+            <div>
+                <p><b>CU: Supprimer le compte d'un bénévole.</b> <br>
+                </br>
+                <b>But:</b>  Supprimer un compte ainsi que toutes ses informations.<br>
+                <b>Acteurs:</b> Le bénévole (Principal), l’employé (secondaire) <br>
+                <b>Précondition:</b> - le bénévole doit avoir ses informations dans son compte.<br>
+              </p> 
+                <p><b>Scénario principal:</b></p>
+                <ol>
+                    <li>Le bénévole indique à l’employé qu’il désire supprimer son compte.</li>
+                    <li>L’employé accède à la page recherche des bénévoles.</li>
+                    <li>Le bénévole communique son numéro de compte ou son nom à l’employé.</li>
+                    <li>L’employé recherche le profil du bénévole à l'aide du nom ou du numéro de 
+                        compte du bénévole dans la barre de recherche.</li>
+                    <li>L’employé clique sur le profil du bénévole correspondant et l’ouvre.</li>
+                    <li>L’employé vérifie qu’il s’agit du bon bénévole.</li>
+                    <li>L’employé supprime le compte du bénévole.</li>
+                    <li>L’employé confirme la suppression du compte (« OUI » ).</li>
+                    <li>Le système confirme la suppression du compte.</li>
+                        
+                </ol>
+            </div>
+            <hr class="hr1"></hr>
+            <!--PREUVE DE VACCINATION-->
+            <div>
+            <p><b>CU: Envoyer preuve de vaccination</b> <br>
+            </br>
+               <b>But :</b> envoyer à chaque visiteur sa preuve de vaccination <br>
+                <b>Acteur:</b> Employé (principal).<br>
+                <b>Précondition :</b> Le client a fait le vaccin, l’employé est déjà connecté au système.<br>
+            </p> 
+            <p><b>Scénario principal:</b></p>
+            <ol>
+                <li>L’employé récupère le formulaire complété.</li>
+                <li>L’employé vérifie que le client a été vacciné.</li>
+                <li>L’employé ajoute les informations dans le profil de vaccination. </li>
+                <li>Le système valide les informations.</li>
+                <li>L’employé envoie un courriel contenant la preuve sous format de PDF.</li>
+                <li>Le système confirme l’envoi du courriel.</li>
+            </ol>
+            <p><b>Scénario alternatif:</b></p>
+              <p>
+                &emsp;&emsp;2.a Le client n’ est pas vacciné.<br>
+                &emsp;&emsp;&emsp;2.a.1 Fin du scénario.<br>
+                </p>
+            </div>       
+            <hr class="hr1"></hr>
+            <div>
+           <p><b> CU: Modifier profil de vaccination</b> <br>
+            </br>
+            <b>But: </b>Modifier les données entrées dans un profil de vaccination déjà existant. <br> 
+            <b>Acteurs: </b> Client (Principal), L’employé (Secondaire).<br>
+            <b>Précondition :</b>  Avoir déjà des informations dans son profil de vaccination et l’employé est déjà connecté au système.<br>    
+            </p>
+            <p><b>Scénario principal:</b></p>
+            <ol>
+                <li> L’employé accède à la page de Gestion du Profile de vaccination.</li>
+                <li> L’employé recherche le client dont il faut modifier le profil.</li>
+                    <ol>
+                        <li> L’employé demande les informations du client (Nom, Prénom, Numéro de compte).</li>
+                    </ol>
+                    <li> L’employé retrouve le compte correspondant.</li>
+                    <li> L’employé sélectionne “Profil de vaccination”.</li>
+                    <li> L’employé choisit l’option “Modification” une fois dans le profil.</li>
+                    <li> L’employé met à jour les informations concernant le client (Date de vaccination, Type de dose, Nom du vaccin...).</li>
+                    <li> Le système vérifie si les données entrées sont correctes.</li>
+                    <li> L’employé enregistre les informations.</li>
+                    <li> L’employé ferme le profil de vaccination du client.</li>
+                </ol>
+            </div>
+<hr class="hr1"></hr>
+             <!--NOTIFICATION RENDEZ-VOUS-->
+            <div>
+                <p><b>CU : Envoyer notification rendez-vous</b> <br>
+                </br>
+                <b>But:</b> rappeler à chacun des clients son rendez-vous. <br>
+                <b>Acteur:</b> Employé (principal).<br>
+            </p> 
+            <p><b>Scénario principal:</b></p>
+            <ol>
+                <li>L’employé récupère la liste des visites planifiées pour les prochaines 48 heures du système. </li>
+                <li>Le système affiche la liste des visites. </li>
+                <li>L'employé choisit le profil du client. </li>
+                <li>L’employé envoie une notification par courriel. </li> 
+                <li>Le système confirme l’envoi du courriel.  </li>
+            </ol>
+            </div>
+
+            </section>
+            <hr class="hr1"></hr>
+            <section>
+                <h2 id="analysis" class="section-title">Analyse des besoins</h2>
+                <p>
+                    Notre analyse préliminaire nous a permis de déterminer les besoins fonctionnelles du système ainsi que les 
+                    besoins non-fonctionnelles. De plus, on a pu déterminer certains risques reliés à ce projet, ce qui va nous 
+                    aider plus tard à classer les besoins et les risques en ordre de priorité.
+                </p>
+                <div>
+                    <h3>Risques</h3>
+                    <ol class="risks">
+                        <li>La perte ou le vol des informations personnelles des clients, des bénévoles et des employés est 
+                            considéré comme un risque vraiment sévère. Donc le système doit respecter les trois principes 
+                            fondamentaux: la confidentialité, l’intégrité et la disponibilité.</li>
+                        <li>C’est important que le système soit fiable, puisqu’on veut que les changements de données 
+                            (ajouter, modifier ou supprimer) soient enregistrés dans la base de données. Un système qui n’est pas fiable 
+                            causera beaucoup de problèmes avec les visiteurs. Par exemple, les visiteurs qui ont déjà pris un rendez-vous 
+                            et leurs noms n’est pas dans le système, ou ajouter un visiteur spontané qui lui prendra la place à un visiteur 
+                            avec rendez-vous, etc..
+                        </li>
+                        <li>Un risque qu’on peut considérer c’est le budget alloué au projet VaxTodo:re. Si le client décide de faire 
+                            beaucoup de changements au système, cela implique un travail additionnel de l’équipe et la dépense de 
+                            plus de ressources, ce qui causera l’annulation du projet.
+                        </li>
+                    </ol>
+                </div>
+                <div>
+                    <h3>Exigences fonctionnelles</h3>
+                    <ul class="nf-requirements">
+                        <li>
+                            La gestion de rendez-vous est la priorité primaire de GoodPeople. Puisqu'il avait de la 
+                            difficulté à respecter les dates fixées avec les clients et à respecter les délais. 
+                        </li>
+                        <li>
+                            La gestion de compte est aussi importante, pour enregistrer, modifier ou supprimer les informations 
+                            personnelles du client dans la base de données. La gestion des comptes sera vraiment utile pour les 
+                            prochaines visites dans le cas ou le client veut prendre un prochain rendez-vous.
+                            
+                        </li>
+                        <li>
+                            Faire le suivi des client est nécessaire pour envoyer les preuves de vaccination et confirmer les 
+                            prochains rendez-vous des clients.
+                        </li>
+                        <li>
+                            Une base de données pour stocker, modifier ou supprimer des informations est aussi importante pour
+                            avoir accès aux données. Cela va permettre, par exemple de confirmer un rendez-vous d'un client
+                            avec le système.
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Exigences non-fonctionnelles</h3>
+                    <ul class="nf-requirements">
+                        <li>
+                            Les informations personnelles des clients doivent être gardées de façon sécuritaire pour éviter le vol ou la perte de celle-ci.
+                        </li>
+                        <li>
+                            Le design de l'application est une contrainte de fiabilité. Sans le design, le système peut fonctionner.
+                            Cependant, son utilisation sera plus difficile.
+                        </li>
+                        <li>
+                            Rechercher les comptes déjà existants pour vérifier le profil est une contrainte de performance et 
+                            de temps de réponse pour sauver du temps à l'employé et au client. Par exemple, le fait d'utiliser la
+                            barre de recherche au lieu de parcourir la liste un client à la fois. Ce qui sauvera beaucoup de temps.
+                        </li>
+                        <li>
+                            Le code doit être facilement modifiable pour permettre la maintenabilité et l'adaptabilité du système. 
+                            Ce qui va permettre de réduire grandement la durée du travail et les coûts impliqués.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <h2 id="prototype" class="section-title">Prototype</h2>
+                <ul class="bare-list previews">
+                    <li class="preview">
+                        <img class="preview-img" src="./images/ConnexionDesPages.PNG" alt="">
+                        <br>
+                        Voici une image qui montre la globalité du prototype et les connexions entre les pages.
+                        <br><br><br>
+                    </li>
+                    <li class="preview">
+                        <img class="preview-img-long" src="./images/pagePrincipalEtSuivi.PNG" alt="">
+                        <br>
+                        Ces pages permettent à l'employé de se connecter et d'accèder au menu principal.<br>
+                        La page de suivi permet d'envoyer les preuves de vaccination au client qui se sont fait vacciné durant la journée.
+                        <br><br><br>
+                    </li>
+                    <li class="preview">
+                        <img class="preview-img" src="./images/pageRendezVous.PNG" alt="">
+                        <br>
+                        Ces pages permettent la gestion des rendez-vous.<br>
+                        C'est-à-dire, de consulter les différentes plages horaires, d'ajouter un rendez-vous et d'annuler un rendez-vous.
+                        <br><br><br>
+                    </li>
+                    <li class="preview">
+                        <img class="preview-img" src="./images/pagesGestionCompteClient.PNG" alt="">
+                        <br>
+                        Ces pages permettent la gestion des comptes clients. C'est à dire, de rechercher, créer, modifier ou supprimer un client.
+                        <br><br><br>
+                    </li>
+                    <li class="preview">
+                        <img class="preview-img" src="./images/pagesGestionCompteBénévole.PNG" alt="">
+                        <br>
+                        Ces pages permettent la gestion des comptes bénévoles. C'est à dire, de rechercher, créer, modifier ou supprimer un bénévole.
+                        <br><br><br>
+                    </li>
+                    <li class="preview">
+                        <img class="preview-img" src="./images/pagesGestionCompteEmployé.PNG" alt="">
+                        <br>
+                        Ces pages permettent la gestion des comptes employés. C'est à dire, de rechercher, créer, modifier ou supprimer un employé.
+                        <br><br><br>
+                    </li>
+                
+            </ul></section>
+            <hr class="hr1"></hr>
+            <!--Analyse-->
+            <section>
+                <h2 id="analyse" class="section-title">Analyse</h2>
+                <div>
+                    <h3>Besoins matériels</h3>
+                    <h4>Partie à informatiser</h4>
+                    <p>
+                        Nous allons utiliser le mode interactif puisque le logiciel ne sera pas utilisé par beaucoup de personnes 
+                        et que le budget de GoodPeople est limité. (Petit volume, ordinateur sur place)
+                    </p>
+                    <h4>Matériel nécessaire</h4>
+                    <ul>
+                   <li>Plusieurs ordinateurs personnels avec le système d'exploitation (windows, ~ 250GB).</li> 
+                   <li> Les ordinateurs personnels devront être équipés d’un clavier, d’une souris et d’un écran.</li> 
+                   <li> Un disque durs externe qui servira de base de données ~ 1TB.</li> 
+                   <li> Un modem pour avoir accès à internet.</li> 
+                   <li> Une ou plusieurs imprimantes.</li> 
+                    </ul>
+                    <h4>Solutions de stockage</h4>
+                    <ol>
+                   <li>Avoir un ordinateur branché à un disque dur externe qui va servir uniquement à gérer la base de données. 
+                       Les fichiers qui y seront stockés seront des CSV avec des virgules pour séparer les colonnes et des sauts
+                    de ligne pour séparer chaque élément.</li> 
+                    <li>Utiliser un service de stockage en ligne.</li>
+                </ol>
+                <h3>Conception physiques et conceptuelles</h3>
+                <ul>
+                <li>L’utilisation de l’imprimante et du logiciel dépend du nombre de visiteurs reçus par jour. </li>
+                <li>Les questionnaires sont imprimés sur une seule page de format A4. </li>
+                <li>La taille d’un dossier d’un client ~ 100 octets.</li>
+                <li>La taille d’un dossier d’un bénévole ~ 130 octets.</li>
+                <li>La taille d’un dossier d’un profil de vaccination ~ 130 octets.</li>
+                <li>~6MB d’espace nécessaire pour le système.</li>
+                <li>Pour le système, nous avons décidé que nous allions utiliser le langage de programmation Java. </li>
+                <li>Dans le cas où il y aurait le budget nécessaire pour améliorer l'interface, il nous sera facile de
+                changer l’interface pour une interface graphique avec WindowsBuilder.</li>
+            </ul>        
+
+                </div>
+            </section>
+            <hr class="hr1"></hr>
+            <!--DIAGRAMME D'ACTIVITE-->
+            <section>
+                <h2 id="activity" class="section-title">Diagrammes d'activités</h2>
+                <ul class="bare-list previews">
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de menu.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeActMenu.PNG" alt="">
+                        <br><br>
+                    </li>
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de gestion Rendez-vous.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeActRDV.PNG" alt="">
+                        <br><br>
+                    </li>
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de gestion Client.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeActClient.PNG" alt="">
+                        <br><br>
+                    </li>
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de gestion Bénévole.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeActBenevole.PNG" alt="">
+                        <br><br>
+                    </li>
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de Questionnaire.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeActQuestionnaire.PNG" alt="">
+                        <br><br>
+                    </li>
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de gestion du profil de vaccination.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeActPV.PNG" alt="">
+                        <br><br>
+                    </li>
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme se connecter.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeActLogin.PNG" alt="">
+                        <br><br>
+                    </li>
+                    </ul>
+                    </section>
+                    <hr class="hr1"></hr>
+            <!--DIAGRAMME DE CLASSE-->
+                    <section>
+                        <h2 id="class" class="section-title">Diagramme de Classe</h2>
+                        <ul class="bare-list previews">
+                            <li class="preview">
+                                <br>
+                                Voici une image globale du diagramme de classe.
+                                <br><br>
+                                <img class="preview-img" src="./images/DiagrammeDeClasse.PNG" alt="">
+                                <br><br>
+                            </li>
+                            <li class="preview">
+                                <br>
+                                Voici les deux images qui montre la partie interface graphique du diagramme de classe.
+                                <br><br>
+                                <img class="preview-img" src="./images/diagramClasseHautUI.JPG" alt="">
+                                <br><br>
+                                <img class="preview-img" src="./images/diagramClasseBasUI.JPG" alt="">
+                                <br><br>
+                            </li>
+                            <li class="preview">
+                                <br>
+                                Voici une image qui montre la partie Account (en jaune) du diagramme de classe
+                                <br><br>
+                                <img class="preview-img" src="./images/diagramClasseAccount.JPG" alt="">
+                                <br><br>
+                            </li>
+                            <li class="preview">
+                                <br>
+                                Voici une image qui montre la partie librairie (en vert) du diagramme de classe
+                                <br><br>
+                                <img class="preview-img" src="./images/diagramClasseLib.JPG" alt="">
+                                <br><br>
+                            </li>
+                            <li class="preview">
+                                <br>
+                                Voici une image qui montre la partie Csv (en rouge) du diagramme de classe
+                                <br><br>
+                                <img class="preview-img" src="./images/diagramClasseCSV.JPG" alt="">
+                                <br><br>
+                            </li>
+                        </ul>
+                        <h3>Justification</h3>
+                        <p>
+                            Nous avons décidé de divisé la gestion des différentes entité en plusieurs controleur pour
+                            permettre une meilleur cohésion. De cette façon, les éléments ne sont pas tous réuni dans le 
+                            même module. Cela permet aussi un faible couplage avec la classe Menu qui n'a pas trop a se soucié
+                            des éléments des controleurs. Grâce à cette décomposition, cela nous a donc permis de nous concentrer 
+                            sur 1 module à la fois et de les rendre plus facilement modifiable au besoins sans que ça n'affecte
+                            les autres modules.
+                        </p>
+                    </section>
+                    <hr class="hr1"></hr> 
+
+            <!--DIAGRAMMES DE SEQUENCE-->
+            <section>
+                <h2 id="sequence" class="section-title">Diagramme de Séquence</h2>
+                <ul class="bare-list previews">
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de séquence pour créer un compte.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeSEQCreerCompte.PNG" alt="">
+                        <br><br>
+                    </li>
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de séquence pour modifier un compte.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeSEQModifierCompte.PNG" alt="">
+                        <br><br>
+                    </li>
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de séquence pour supprimer un compte.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeSEQSupprimerCompte.PNG" alt="">
+                        <br><br>
+                    </li>
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de séquence pour une prise de période.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeSEQPrisePeriode.PNG" alt="">
+                        <br><br>
+                    </li>
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre le diagramme de séquence pour une mise à jour du profile de vaccination.
+                        <br><br>
+                        <img class="preview-img" src="./images/DiagrammeSEQMiseAJourProfile.PNG" alt="">
+                        <br><br>
+                    </li>
+                </ul>
+            </section>
+            <hr class="hr1"></hr> 
+            <!--TEST UNITAIRE-->
+            <section>
+                <h2 id="test" class="section-title">Test unitaire</h2>
+                <ul class="bare-list previews">
+                    <li class="preview">
+                        <br>
+                        Voici une image qui montre les tests unitaires.
+                        <br><br>
+                        <img class="preview-img" src="./images/testUnitaire.JPG" alt="">
+                    </li>
+                </ul>
+            </section>
+            <hr class="hr1"></hr>
+            </section>
+        </div>
+    </main>
+    <footer class="report-footer">
+        <p>
+            <a class="link report-footer__link" href="https://bitbucket.org/linkoer/vaxtodo-redm3/src/master/"> Lien vers compte Bitbucket</a></p>
+        <p>
+           <a class="link report-footer__link" href="./VPP/VaxToDo.vpp">Lien vers ressource externe (fichiers VPP)</a></p>
+    </footer>
+
+
+</body></html>

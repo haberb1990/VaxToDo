@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="init" name="VaxTodo:re">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../../../../eclipse/java-2020-09/eclipse/"/>
+    <property name="junit.output.dir" value="junit"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="14"/>
+    <property name="source" value="14"/>
+    <path id="Application.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="library/jcalendar-1.4.jar"/>
+        <pathelement location="library/opencsv-5.5.1.jar"/>
+        <pathelement location="library/commons-beanutils-1.9.4.jar"/>
+        <pathelement location="library/commons-collections-3.2.2.jar"/>
+        <pathelement location="library/commons-collections4-4.4.jar"/>
+        <pathelement location="library/commons-lang3-3.12.0.jar"/>
+        <pathelement location="library/commons-logging-1.2.jar"/>
+        <pathelement location="library/commons-text-1.9.jar"/>
+        <pathelement location="library/hamcrest-core-1.3.jar"/>
+        <pathelement location="library/junit-4.13.2.jar"/>
+    </path>
+    <path id="run.ClientControlerTest.classpath">
+        <path refid="Application.classpath"/>
+        <pathelement location="library/jcalendar-1.4.jar"/>
+        <pathelement location="library/opencsv-5.5.1.jar"/>
+        <pathelement location="library/commons-beanutils-1.9.4.jar"/>
+        <pathelement location="library/commons-collections-3.2.2.jar"/>
+        <pathelement location="library/commons-collections4-4.4.jar"/>
+        <pathelement location="library/commons-lang3-3.12.0.jar"/>
+        <pathelement location="library/commons-logging-1.2.jar"/>
+        <pathelement location="library/commons-text-1.9.jar"/>
+        <pathelement location="library/hamcrest-core-1.3.jar"/>
+        <pathelement location="library/junit-4.13.2.jar"/>
+    </path>
+    <path id="run.ReservationCalendar.classpath">
+        <path refid="Application.classpath"/>
+        <pathelement location="library/jcalendar-1.4.jar"/>
+        <pathelement location="library/opencsv-5.5.1.jar"/>
+        <pathelement location="library/commons-beanutils-1.9.4.jar"/>
+        <pathelement location="library/commons-collections-3.2.2.jar"/>
+        <pathelement location="library/commons-collections4-4.4.jar"/>
+        <pathelement location="library/commons-lang3-3.12.0.jar"/>
+        <pathelement location="library/commons-logging-1.2.jar"/>
+        <pathelement location="library/commons-text-1.9.jar"/>
+        <pathelement location="library/hamcrest-core-1.3.jar"/>
+        <pathelement location="library/junit-4.13.2.jar"/>
+    </path>
+  	<target name="init" description="create jar file for the application">
+  		<delete file="./vaxtodo.jar"/>
+  		<jar destfile="./vaxtodo.jar">
+  			<fileset dir="./bin" includes="**/*.class"/>
+  			<manifest>
+  				<attribute name="Main-Class" value="App"/>
+  			</manifest>
+  			<zipgroupfileset dir="./library" includes="**/*.jar" />
+  		</jar>
+  	</target>
+</project>
